@@ -1,0 +1,12 @@
+2 hours - Online class in the morning
+1 hour - AWS
+10 min - EC2 Install
+1 hour - Git
+
+
+
+Tomorrow's Task
+We will learn linux
+Basic Linux installation
+EC2 Connect
+Git hub connection
