@@ -1,0 +1,29 @@
+# After ssh connection using
+git config --global user.name "set github username"
+git config --global user.email "set email"
+
+#create passwordless connection
+ssh-keygen -t ed25519 -C "your email"
+
+then add id_ed25519.pub file data to github-> Profile -> Settings -> Sshkeys and gsh keys 
+
+#then establish connection
+ssh -T git@github.com
+
+#then add git init
+git add .
+git remote add origin git@github.com:repodestination
+
+git commit -m "first commit"
+git push -u origin main
+
+# If you use git remote add origin git@github.com:repodestination
+
+then check remote access
+git remote -v
+
+# if it shows https://github.com
+Use token 
+Profile -> Settings -> Developer settings -> token -> allow policy
+
+# Then add that token after username and password To Password
