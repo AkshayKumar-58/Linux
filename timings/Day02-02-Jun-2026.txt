@@ -1,0 +1,46 @@
+# Today we had a session for linux introduction where we learn commands such as
+1. File and Directory Operations
+ls - list 
+ls -l -> list in long format
+ls -a -> hidden files or directory
+ls -i -> show inodes 
+ls -h -> human format of storage
+ls -r -> reverse order means last modified will be on the top
+ls -t -> according to time of creation
+ls -S -> according to size in desceding order
+ls -larhtS -> ascending order in size
+
+cd - chande directory
+
+pwd - present working directory
+
+mkdir - make directory
+mkdir -p -> to make parent directory ( A -> B -> C)
+
+cp - copy files cp file_to_copy destination_path
+cp -r -> copy directories 
+
+mv - used to move and rename a file or directory
+mv old_filename newfilename
+mv moving_file destination_path
+
+rm - To remove files 
+rm filename
+rm -r -> to remove directories recurscively
+rm -f -> forcefully remove file
+
+touch - used to create files. If no file extension is given then by default it is a txt file
+
+2. Text Processing and Viewing
+
+3. System Control and Info
+
+4. Process management
+
+5. Networking and Connectivity
+
+6. Permissions and Users
+
+7. Archiving and Compression
+
+8. Package Management
