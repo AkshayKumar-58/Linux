@@ -1,0 +1,18 @@
+#Today we have learned about creating and lauching instances 
+Step 1: Name your instance 
+Step 2: Select AMI(Amazon Machine Image) 
+Step 3: Select Instance Type such as t3.micro or any other
+Step 4: Create or use existing key pair (.pem for ssh and .ppk for putty ssh)
+Step 5: Create new security group or use existing
+Step 6: Select VPC and allow SSH traffic 
+Step 7: Configure Storage
+Step 8: You can also deploy your applications in advanced details or patching your instance 
+
+# Types of IP
+Public and Private
+Private IP starts from 10.0.0.0, 172.168.0.0, 192.168.0.0
+
+#Private and Public Key
+Private Key is stored in local machine and public is stored on the cloud 
+
+
