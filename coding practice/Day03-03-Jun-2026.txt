@@ -1,9 +1,9 @@
 # Day 03 — Users, SGs, Env Vars
 
-## 🔹 Ansible — Create User
+##  Ansible — Create User
 
 ---
-- name: Create Pathnex user
+- name: Create Akshay user
   hosts: all
   become: yes
 
@@ -32,23 +32,24 @@ resource "aws_security_group" "PathnexSG" {
   }
 }
 
-resource "aws_instance" "PathnexEC2" {
+resource "aws_instance" "AkshayEC2" {
   ami                    = "ami-0abcd1234abcd1234"
   instance_type          = "r6i.4xlarge"
-  vpc_security_group_ids = [aws_security_group.PathnexSG.id]
+  vpc_security_group_ids = [aws_security_group.AkshaySG.id]
 
   tags = {
-    Name = "Pathnex-EC2"
+    Name = "Akshay-EC2"
   }
 }
 
 
-## 🔹 Kubernetes — Add Environment Variables
+## Kubernetes — Add Environment Variables
 
 apiVersion: v1
 kind: Pod
 metadata:
   name: pathnex-env-pod
+  name: akshay-env-pod
 spec:
   containers:
     - name: app
@@ -58,10 +59,10 @@ spec:
           value: "production"
 
 
-## 🔹 Shell Script — Check File Exists
+## Shell Script — Check File Exists
 
 #!/bin/bash
-FILE="/tmp/pathnex.txt"
+FILE="/tmp/server.txt"
 
 if [ -f "$FILE" ]; then
   echo "File exists"
@@ -71,7 +72,7 @@ fi
 
 
 # NodeJS Build
-## 🔹 Jenkins Pipeline — NodeJS Build
+## Jenkins Pipeline — NodeJS Build
 You will learn how to **install dependencies, run tests, and build a NodeJS project**.
 
 pipeline {
@@ -103,7 +104,7 @@ pipeline {
     }
 }
 
-## 🔹 GitLab CI — NodeJS Build
+## GitLab CI — NodeJS Build
 
 stages:
   - install
