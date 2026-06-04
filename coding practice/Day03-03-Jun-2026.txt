@@ -8,21 +8,21 @@
   become: yes
 
   tasks:
-    - name: Create user akshay-admin
+    - name: Create user pathnex-admin
       user:
-        name: akshay-admin
+        name: pathnex-admin
         shell: /bin/bash
 
 
-##  Terraform — Security Group (r6i.4xlarge EC2)
+## 🔹 Terraform — Security Group (r6i.4xlarge EC2)
 
 provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_security_group" "akshaySG" {
-  name        = "AkshaySG"
-  description = "Akshay SG for SSH"
+resource "aws_security_group" "PathnexSG" {
+  name        = "PathnexSG"
+  description = "Pathnex SG for SSH"
 
   ingress {
     from_port   = 22
@@ -48,6 +48,7 @@ resource "aws_instance" "AkshayEC2" {
 apiVersion: v1
 kind: Pod
 metadata:
+  name: pathnex-env-pod
   name: akshay-env-pod
 spec:
   containers:

@@ -1,3 +1,23 @@
+# Today we have learned to launch EC2 instance
+Step 1: Name your server
+Step 2: Select your AMI or OS(Amazon Machine Image) for different region ami is different
+Step 3: Select Instance Type such as t3.micro
+Step 4: Select or Create Key pair (.pem for terminal ssh and .ppk for putty)
+Step 5: Create or select existing VPC 
+Step 6: Create Subnet Public and Private
+Step 7: Edit or create Security Group and allow SSH traffic
+Step 8: Configure Storage
+Step 9: Advanced details to launch your app or pathch your server
+
+# Types of IP 
+Public and Private
+Every time an instance start new public IP is assign otherwise assign elastic IP( which is a static IP for a instance that does not change after restarting instance, It charges when instance is stop)
+
+#Types of  Keys
+Private and Public
+
+Private is stored in local machine
+Public is stored in cloud
 #Today we have learned about creating and lauching instances 
 Step 1: Name your instance 
 Step 2: Select AMI(Amazon Machine Image) 
