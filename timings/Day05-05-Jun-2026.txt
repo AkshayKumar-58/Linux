@@ -1,0 +1,34 @@
+#Today we have learned about crontab and cronjob
+Crontab is a scheduler that schedule tasks such as scripts, commands to run automatically in the background at specific time, dates or intervals
+
+# To add a cronjob
+crontab -e
+* * * * * absoute_path of file or script 
+for example - I have created a script to log list all files
+
+list.sh
+#!/bin/bash
+ls
+ls -l
+ls -la
+
+New job was added in crontab
+* * * * * /home/ec2-user/list.sh >> /home/ec2-user/cronlog 2>&1
+
+After that i have learned about git and git rules
+git config --global user.name "Your Name" - To set username 
+git config --global user.email "you@example.com" - Your github linked mail
+git config --list
+git remote -v - Established connection
+git init - intiate git environment in repo
+git clone repo-url - to clone the repo from github to local machine
+git status - to check the status or on which branch you are on
+git branch branch_name - to create new branch
+git switch branch_name - To switch to the branch
+git add . - To add all the changes in files or codes to the branch
+git add file_name - To add a specific file to the branch
+git commmit -m "your message" - To commit your changes to your branch
+git checkout - To check your branch status on which branch you are working on
+git reset --soft - To go to the previous commit, it removes commit, kept the staging, keep the files
+git reset --hard - To rollback previous commit, it removes commit, removes staging and remove the changed files
+
