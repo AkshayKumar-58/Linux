@@ -1,0 +1,30 @@
+# 4 June Study
+Today i have learned about system and process management commands
+top - gives us all the information about the server or the machine
+how many process cpu utilization, memory utilization, load, storage utilization
+
+df -h - Human readable format for disk free
+du -h - Human readable format for size of files and folders in a directory
+nproc - Is used to findout total cores of cpu
+lscpu | grep "^CPU(s)" - same as nproc
+
+find - to find files and directories
+logs folder - /var/log
+umask - by default 022, this value is subtracted from 777 or anyother permission
+it is a temporary permission change method for a file or directory
+
+# To find logs for a month
+find /var/log -type f -mtime +30
+
+#To find logs for last 5 days
+find /var/log -type f -mtime +5
+
+# to delete logs
+find /var/log -type f -mtime +30 -delete
+find /var/log -type f -mtime +5 -delete
+
+# About AWS
+What are hard limitations of VPC
+What are soft limitations of VPC
+What is vpc peering
+How to connect Vpc with vpc peering
