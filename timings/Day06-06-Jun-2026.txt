@@ -1,0 +1,40 @@
+#Cloud Computing models
+IaaS- Infrastructure as a service it provides virutalized computing resources such as servers, storge and networking over the internet on a pay-as-you-go basis. It is like renting an empty plot of land. The provider gives you the space and the utilites.Like lauching EC2 
+
+PaaS - It is an envionment build for deploying and running applications. Like AWS EBS, AWS Lambda, AWS Fargate and Amazon RDS
+You only need to take care of your application, AWS will manage the infrastructure, patching the OS and security of the infrastructure by the cloud example - 
+
+SaaS - Sofware as a Service provides fully functional, complete software applications hosted and managed entirely
+#Today we have study about server and ec2 server 
+Pricing Models Reserved, Spot, Dedicated and Dedicated Hosts
+
+Cheapest Instances are in Spot instances and it can be interrrupted by another bidder. Bidding happens in market place to get cheap instances for temporary uses like testing purpose and many more
+
+Reserved Instances on Demand instance give around 70-90% Discount based on the year intervals and also the more you use the AWS services, the more discount you get.
+Upfront Cost - If you pay all the  upfront cost, AWS gives more discount.
+Partial upfront - you only pay some amount for the reserved instance and remaining amount by installments
+No upfront - monthly term pay as you go monthly discount is given
+
+Dedicated Instances - Servers or EC2 virtual machines that runs on physical isolated at the host level from instances belonging to other AWS accounts. They provide strict hardware-level isolation without requiring you to managaeor control the underlying server yourself
+
+Dedicated Hosts - Takes Dedicated Instance to next level, the physical servers with EC2 instance capacity fully dedicated to your single AWS account. They provide deep visibility into the the physical hardware(sockets and cores), enabling you to use strict, existing software licenses (like Windows Server) and meet strict regulatory compliance
+
+#After that
+We have learned about the IAM(Identity and Access Managment) like users, groups, roles, access keys, policies and many more.
+
+VPC (Virtual Private Cloud) it is your own isolated private network inside a public cloud. It lets you run servers, databases, and applications in a secure envionment that you control.
+CIDR block 
+Types of private IP
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+
+Subnets is simply a smaller, isolated network created inside a larger one.
+For better performance, devices on the same subnet can talk to each other directly without shouting across the entire global network
+There are two types of Subnets
+Public Subnet - It is a section of a virtual network that has a direct route to public internet
+Route Table has subnet association and route table has route to the internet gateway
+
+Private Subnet - It is a section of virtual network that is connected to NAT Gateway(Network Address Translation), NAT Gatewayhas a elastic IP that act as a VPN between private instance from the public network 
+
+#And after that learned basic points of security groups, NACL and S#
