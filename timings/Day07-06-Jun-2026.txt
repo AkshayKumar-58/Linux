@@ -1,0 +1,23 @@
+#Today we have continued aws cloud
+Session Manager - 
+It is used to connect to your ec2 instances without SSH and keys, it can also access your private instances with the help of the IAM policies such that to patch your server and update your databases.
+
+Cloudwatch -
+It is AWS managed service that is used to monitor AWS resources. It can create logs, metrices and alarm. Metrices like cpu utilization, memory, disk usage and many more. With the help of SNS service you can create a alarm with state in alarm, ok and insufficient data.
+
+Cloudtrail -
+It is a service use to auditing and logs user activity in aws account. You can store upto 90 days of log in cloudtrail but is expensive to store logs in cloudtrail, so you can store the logs in S3 bucket and perform query on that data with the help of Athena
+
+AWS Shield - 
+It is like a firewall that is used to filter traffice and avoid DDOS like attacks that slow downs the server performance
+
+AWS GuardDuty -  It is also used to filter taffic and avoid CVE common vernability  
+
+AWS WAF - Stands for web application firewall that works on application layer which is used to prevent SQL injection, cross site scripting and bots to secure your applications from such threats
+
+Route 53 - Used for translation between domain name to IP address it always uses 53 port that routes traffic with IP and hostname there is also various certificates that you can use like A, AAAA, cname and many more. Need to take a look at these topics
+
+Lambda - It is a serverless service that is managed by AWS all we have to do is just run your code which has a maximum runtime upto 15 minutes with each lambda triggers charge applies according to the time of execution. We can trigger lambda with the help of events, create events that will trigger some commands or sends message with the help of SNS or SQS
+
+Auto Scaling - it can be a part of lambda where we can horizontal and vertical scale our EC2 instances based on the incoming traffic or metrices from cloudwatch or prometheus or grefana
+
