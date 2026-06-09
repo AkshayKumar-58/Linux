@@ -1,0 +1,6 @@
+#Today we have learned 
+VPC Peering
+How to connect to Different VPC with the help of VPC peering, need to edit security group route tables for both the vpc you have to give the cidr to route table local, gateway, vpc
+
+
+Transit Gateway - Is a hub and speak of vpc connection it is a centralized unit that connects a complex vpc connecting that can communicate to different vpc on global level
