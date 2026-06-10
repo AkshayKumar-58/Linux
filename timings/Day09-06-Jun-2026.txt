@@ -1,0 +1,25 @@
+# Docker 
+Docker it is a containerization and orchestration tool which is used to run your applications and dependencies into lightweight, portable unit known as container, it ensures it runs in any environment
+
+#Container
+Container is a isolated environment which contains 
+Your Apllication code
+Libraries
+Dependencies
+System tools
+
+#Docker file
+It is a text file documentation where we describe a image it contains
+FROM - base version
+WORKING DIR /app
+COPY . .
+RUN npm install
+EXPOSE 8080 (Or any other ports)
+CMD("npm","start")
+
+#Docker Engine
+It is the core component for Docker 
+- Docker Daemon - It manages docker volumes and pulling images
+- Container D - It basically use to start, stop 
+- Docker CLI - Command line interface to connect to your EC2 instance
+- Docker 
