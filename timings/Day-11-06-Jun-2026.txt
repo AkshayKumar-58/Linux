@@ -1,0 +1,7 @@
+#Today Learning
+1 hour - AWS
+services like Types of instance types, security groups, NACL, subnets, VPC, VPC-peering, Transit Gateway, Cloudwatch, Cloudtrail, alarms, auto scaling groups, targeted groups.
+
+1 hour - docker, containers, docker swarm, docker-file, docker image, docker hub, image registry tools like image registry ECR from AWS and many others
+
+1 hour - Kubernetes, Cluster, Control Plane or Master, worker nodes, api-server, etcd, controller manager, schedule, kube proxy, kubelet, pods, namespaces, services
