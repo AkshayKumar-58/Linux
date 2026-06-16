@@ -1,0 +1,10 @@
+#Today we have learned about helm chart which is used to manage kubernetes yaml files where all the requirements for deploying pods are there
+Helm is a package manager for kubernetes(K8s), and a Helm Chart is a packaged collection of Kubernetes resource definitions that helps us deploy and manage application easily
+
+In Kubernetes , a typical application requires multiple YAML files, such as a Deployment, Service, ConfigMap, Secret, Ingress and PersistentVolumeClaim. 
+Managing all these files seperately can become difficult, especially acorss different envionments like development, testing, and production. Helm solves this problem by packaging all these resources into a Helm Chart.
+
+Helm Chart is like a folder that contains predefined structure. The main files are:
+Chart.yaml - contains metadata about the chart like names and version
+values.yaml - stores configurable values such as image version, replica count, or service type
+templates/ - contains Kubenetes YAML templates where placeholders are used instead of hardcoded values.
